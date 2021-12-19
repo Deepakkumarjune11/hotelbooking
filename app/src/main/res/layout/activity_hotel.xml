@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:id="@+id/drawerLayout"
+    tools:context=".HotelActivity">
+
+
+
+    <include
+        layout="@layout/drawermenu" />
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+
+        android:paddingLeft="25dp"
+
+        app:headerLayout="@layout/navheader"
+        app:itemIconSize="25dp"
+        app:itemTextColor="#ffa500"
+        app:menu="@menu/navmenu"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="start|left"
+        android:fitsSystemWindows="true"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        class="androidx.appcompat.app.AlertController$RecycleListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:padding="20dp"
+        tools:context=".DrawnActivity">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotelOrders">
+
+    <ImageView
+        android:id="@+id/images"
+        android:layout_width="273dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <Button
+        android:id="@+id/Createreservation"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="140dp"
+        android:backgroundTint="#FFA500"
+        android:text="create Reservation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roomsLeft"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <TextView
+        android:id="@+id/roomsLeft"
+        android:layout_width="296dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="32dp"
+        android:text="roomleft"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/images" />
+    <TextView
+        android:id="@+id/pricePerNight"
+        android:layout_width="296dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="32dp"
+        android:text="price per night"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roomsLeft" />
+    <TextView
+        android:id="@+id/alreadyreserved"
+        android:layout_width="296dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="32dp"
+        android:text="allready reserved by"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pricePerNight" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="555dp"
+        android:layout_height="60dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#00838F"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
